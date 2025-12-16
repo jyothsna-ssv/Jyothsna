@@ -29,11 +29,12 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium text-gray-900 mb-1">Email</h3>
+                    <h3 className="font-medium text-gray-900 mb-1">
+                      <a href="mailto:karuparthi.jyothsna@gmail.com" className="hover:text-gray-700">
+                        karuparthi.jyothsna@gmail.com
+                      </a>
+                    </h3>
                     <p className="text-sm text-gray-600 mb-2">Drop me a line anytime</p>
-                    <a href="mailto:karuparthi.jyothsna@gmail.com" className="text-sm text-gray-900 hover:text-gray-700">
-                      karuparthi.jyothsna@gmail.com
-                    </a>
                   </div>
                 </div>
               </Card>
