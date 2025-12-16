@@ -107,9 +107,9 @@ export default function Skills() {
         </div>
 
         <div className="pt-8 border-t border-gray-200">
-          <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+          <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 text-center">
             <h3 className="text-lg font-medium text-gray-900 mb-2">Always Learning</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Technology evolves rapidly, and I&apos;m committed to continuous learning and exploring
               new frameworks, tools, and best practices to build better systems.
             </p>

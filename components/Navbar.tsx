@@ -14,9 +14,7 @@ const Navbar = () => {
     { path: '/projects', label: 'Projects' },
     { path: '/skills', label: 'Skills' },
     { path: '/perspectives', label: 'Perspectives' },
-    { path: '/clicks', label: 'Clicks' },
     { path: '/contact', label: 'Contact' },
-    { path: '/pics/Resume_KaruparthiJyothsna_.pdf', label: 'Resume', external: true },
   ]
 
   const isActive = (path: string) => pathname === path
@@ -33,8 +31,6 @@ const Navbar = () => {
               <li key={link.path}>
                 <Link
                   href={link.path}
-                  target={link.external ? '_blank' : undefined}
-                  rel={link.external ? 'noopener noreferrer' : undefined}
                   className={`text-xs font-medium transition-all duration-200 relative py-1 px-2 rounded ${isActive(link.path)
                     ? 'text-accent bg-gray-100'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
@@ -69,8 +65,6 @@ const Navbar = () => {
                 <Link
                   href={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  target={link.external ? '_blank' : undefined}
-                  rel={link.external ? 'noopener noreferrer' : undefined}
                   className={`block text-xs font-medium transition-all duration-200 py-2 px-3 rounded ${isActive(link.path)
                     ? 'text-accent bg-gray-100'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
